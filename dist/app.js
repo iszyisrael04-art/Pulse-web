@@ -1,6 +1,8 @@
+import {startEventBranding} from './event-branding.js';
 import {profileHeader} from './profile-header.js';
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.99.1/+esm';
 const db=createClient('https://mhebynaprmhxfbcsiqgf.supabase.co','sb_publishable_I4ffulPriroIpZgEDRO4_A_gh_4v2Vj');
+startEventBranding(db);
 let profileCleanup=null;
 const $=s=>document.querySelector(s);let feedMode='for_you';let user,tab='home',cursor=null,chat=null,poll=null,generation=0;
 const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n};
