@@ -10,7 +10,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check dist/app.js
+      - run: |
+          node --check dist/app.js
+          node --check dist/profile-header.js
       - uses: actions/upload-artifact@v4
         with:
           name: Pulse-Web

@@ -22,7 +22,9 @@ jobs:
         with:
           node-version: '22'
       - name: Check JavaScript
-        run: node --check dist/app.js
+        run: |
+          node --check dist/app.js
+          node --check dist/profile-header.js
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload website
