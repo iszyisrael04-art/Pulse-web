@@ -1,12 +1,8 @@
 const gifts = [
- ["voltage_dominion","Voltage Dominion","Electric filaments take over the screen",29999],
- ["void_rift","Void Rift","A split in space, lit by violet plasma",34999],
- ["solar_overdrive","Solar Overdrive","Golden solar flares and a radiant core",39999],
- ["quantum_cathedral","Quantum Cathedral","Rotating energy geometry in ultraviolet",49999],
- ["prism_avalanche","Prism Avalanche","A storm of iridescent glass shards",59999],
- ["aurora_ascension","Aurora Ascension","Luminous ribbons rise through the darkness",69999],
- ["gravity_collapse","Gravity Collapse","A glowing accretion disk bends the light",79999],
- ["pulse_supernova","Pulse Supernova","Expanding shockwaves of mint and gold",99999],
+ ["archmage","The Archmage","Cinematic spell scene with animated magic",79999],
+ ["moon_witch","Moonlight Witch","Cinematic spell scene with animated magic",84999],
+ ["wizard_filter","Wizard Head Filter","Wearable LIVE hat · preview shows artwork",15999],
+ ["witch_filter","Witch Head Filter","Wearable LIVE hat · preview shows artwork",18999],
  ["galaxy","Pulse Universe","An entire universe of appreciation",2500]
 ];
 const grid=document.querySelector('#gifts');
