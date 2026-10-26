@@ -3,28 +3,30 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pulse Shop · Gift previews</title>
-<meta name="description" content="Preview Pulse cinematic LIVE gifts in your browser. No app download or coins needed.">
-<link rel="icon" href="assets/pulse.png"><link rel="stylesheet" href="gift-previews.css?v=magic-1">
+<meta name="description" content="Preview Pulse wildlife LIVE gifts in your browser. No app download or coins needed.">
+<link rel="icon" href="assets/pulse.png"><link rel="stylesheet" href="gift-previews.css?v=wildlife-52">
 </head>
 <body>
 <header><a class="brand" href="./"><img src="assets/pulse.png" alt=""><strong>pulse</strong></a><a class="back" href="./">Open Pulse ↗</a></header>
 <main>
 <div class="eyebrow">PULSE SHOP / LIVE GIFTS</div>
-<h1>A little mystery.<br><span>A powerful entrance.</span></h1>
-<p class="intro">Original wizard and witch artwork, animated spells, and wearable LIVE head filters. Head-filter previews demonstrate the artwork; the app tracks the host’s head during LIVE.</p>
+<h1>Real wildlife.<br><span>A gift from you.</span></h1>
+<p class="intro">Short licensed wildlife videos. Simple sender notifications. No 3D scenes, head filters or visual effects.</p>
 <div class="notice"><span class="spark">✦</span><div><strong>Free to preview</strong><p>No sign-in, LIVE connection or app download needed. Previews never spend coins.</p></div></div>
-<div class="collection-title"><h2>Cinema collection</h2><span>2 scenes · 2 head filters · Pulse Universe</span></div>
+<div class="collection-title"><h2>Wildlife collection</h2><span>4 five-second video gifts</span></div>
 <div id="gifts" class="grid"></div>
 <noscript><p>Enable JavaScript to choose and preview a gift.</p></noscript>
-<p class="data-note">Videos load only when you tap Preview. Each is approximately 210–820 KB; thumbnails load as you scroll.</p>
-<footer>Original Pulse scenes · <a href="https://github.com/iszyisrael04-art/pulse-messenger/blob/8f1d042fdc3d49262179a29a478d5b6b3034eb46/docs/magic-chat-49.md" target="_blank" rel="noopener">Asset credits</a></footer>
+<section class="notification-demo"><h2>Small gifts. Just a notification.</h2><p>Rose, Heart and every gift below 300 coins use this notification only.</p><div id="small-notice" class="gift-notice"><img src="assets/pulse.png" alt="Preview sender avatar"><div><strong>Preview sender</strong><span id="small-title">Sent Rose</span></div><b id="small-image" aria-label="Rose">🌹</b><strong id="small-count">×1</strong></div><div class="small-actions"><button id="demo-rose">Preview Rose</button><button id="demo-heart">Preview Heart</button><button id="demo-combo">+1 demo</button></div><p class="data-note">Demonstration only. No coins or payment.</p></section>
+<p class="data-note">Videos load when you tap Preview. Four clips total about 1.5 MB; thumbnails load as you scroll. Videos preserve their original frame and audio where present.</p>
+<footer>Licensed wildlife footage · <a href="https://github.com/iszyisrael04-art/pulse-messenger/blob/02a15ec835d8c25b6fe556bd5bd3e79ccf99f464/docs/wildlife-gifts-52.md" target="_blank" rel="noopener">Footage credits and licenses</a></footer>
 </main>
 <dialog id="player">
 <div class="player-heading"><div><span class="eyebrow">GIFT PREVIEW · FREE</span><h2 id="gift-title"></h2></div><button id="close-player" aria-label="Close gift preview">✕</button></div>
-<div class="stage"><video id="gift-video" controls playsinline preload="none" aria-labelledby="gift-title"></video></div>
+<div class="stage"><video id="gift-video" controls playsinline preload="none" aria-labelledby="gift-title"></video><div id="video-notice" class="gift-notice"><img src="assets/pulse.png" alt="Preview sender avatar"><div><strong>Preview sender</strong><span id="notice-title"></span></div><img id="notice-gift" alt="Gift image"><strong>×1</strong></div></div>
+<p id="footage-credit"></p>
 <p id="playback-status" role="status"></p>
 <div class="player-actions"><button id="replay">↻ Replay</button><button id="sound" aria-pressed="false">Sound on</button></div>
 <p class="preview-note">This preview sends no gifts and spends no coins.</p>
 </dialog>
-<script type="module" src="gift-previews.js?v=magic-1"></script>
+<script type="module" src="gift-previews.js?v=wildlife-52"></script>
 </body></html>
