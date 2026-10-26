@@ -1,14 +1,13 @@
 const gifts = [
- ['dream','Pulse Dream','A journey among the worlds'],
- ['phoenix','Solar Phoenix','Wings, fire and a radiant portal'],
- ['dragon','Dragon Flame','Flight above the lava'],
- ['sports_car','Golden Sports Car','Gold meets a neon road'],
- ['lion','Lion','A jungle entrance and a roar'],
- ['gorilla','Jungle Silverback','Power from the heart of the jungle'],
- ['royal_lions','Royal Lions','Two lions. One royal entrance.'],
- ['pulse_stars','Pulse Stars','The jungle stars come together'],
- ['thunder_falcon','Thunder Falcon','Wings through a lightning portal'],
- ['galaxy','Pulse Universe','An entire universe of appreciation'],
+ ["voltage_dominion","Voltage Dominion","Electric filaments take over the screen",29999],
+ ["void_rift","Void Rift","A split in space, lit by violet plasma",34999],
+ ["solar_overdrive","Solar Overdrive","Golden solar flares and a radiant core",39999],
+ ["quantum_cathedral","Quantum Cathedral","Rotating energy geometry in ultraviolet",49999],
+ ["prism_avalanche","Prism Avalanche","A storm of iridescent glass shards",59999],
+ ["aurora_ascension","Aurora Ascension","Luminous ribbons rise through the darkness",69999],
+ ["gravity_collapse","Gravity Collapse","A glowing accretion disk bends the light",79999],
+ ["pulse_supernova","Pulse Supernova","Expanding shockwaves of mint and gold",99999],
+ ["galaxy","Pulse Universe","An entire universe of appreciation",2500]
 ];
 const grid=document.querySelector('#gifts');
 const dialog=document.querySelector('#player');
@@ -17,13 +16,13 @@ const status=document.querySelector('#playback-status');
 const sound=document.querySelector('#sound');
 let selected=null;
 function play(){status.textContent='Loading preview…';video.play().catch(()=>{status.textContent='Tap the play control to start the preview.';});}
-for(const [id,title,description] of gifts){
+for(const [id,title,description,coins] of gifts){
  const card=document.createElement('article');card.className='gift';
  const art=document.createElement('div');art.className='art';
  const image=document.createElement('img');image.src='assets/gifts/thumb_'+id+'.png';image.alt=title;image.loading='lazy';image.width=192;image.height=192;
  const duration=document.createElement('span');duration.className='duration';duration.textContent='CINEMA · 6s';art.append(image,duration);
  const info=document.createElement('div');info.className='gift-info';
- const identity=document.createElement('div');const heading=document.createElement('h3');heading.textContent=title;const caption=document.createElement('p');caption.textContent=description;identity.append(heading,caption);
+ const identity=document.createElement('div');const heading=document.createElement('h3');heading.textContent=title;const caption=document.createElement('p');caption.textContent=description;const price=document.createElement('p');price.className='gift-price';price.textContent='◉ '+coins.toLocaleString()+' coins';identity.append(heading,caption,price);
  const button=document.createElement('button');button.className='preview';button.textContent='▷ Preview';button.setAttribute('aria-label','Preview '+title);
  button.onclick=()=>{
   selected=id;document.querySelector('#gift-title').textContent=title;
