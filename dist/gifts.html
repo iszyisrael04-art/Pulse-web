@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pulse Shop · Gift previews</title>
+<meta name="description" content="Preview Pulse cinematic LIVE gifts in your browser. No app download or coins needed.">
+<link rel="icon" href="assets/pulse.png"><link rel="stylesheet" href="gift-previews.css">
+</head>
+<body>
+<header><a class="brand" href="./"><img src="assets/pulse.png" alt=""><strong>pulse</strong></a><a class="back" href="./">Open Pulse ↗</a></header>
+<main>
+<div class="eyebrow">PULSE SHOP / LIVE GIFTS</div>
+<h1>A little gift.<br><span>A big entrance.</span></h1>
+<p class="intro">Explore the cinematic collection. Tap Preview to watch the same six-second animation included in Pulse.</p>
+<div class="notice"><span class="spark">✦</span><div><strong>Free to preview</strong><p>No sign-in, LIVE connection or app download needed. Previews never spend coins.</p></div></div>
+<div class="collection-title"><h2>Cinema collection</h2><span>10 gifts · Sound included</span></div>
+<div id="gifts" class="grid"></div>
+<noscript><p>Enable JavaScript to choose and preview a gift.</p></noscript>
+<p class="data-note">Videos load only when you tap Preview. Each is approximately 110–330 KB; thumbnails load as you scroll.</p>
+<footer>Original Pulse scenes · <a href="https://github.com/iszyisrael04-art/pulse-messenger/blob/04d737b6ddc6be2535003ceba77b14ee905756df/art/gift_sources/README.md" target="_blank" rel="noopener">Asset credits</a></footer>
+</main>
+<dialog id="player">
+<div class="player-heading"><div><span class="eyebrow">GIFT PREVIEW · FREE</span><h2 id="gift-title"></h2></div><button id="close-player" aria-label="Close gift preview">✕</button></div>
+<div class="stage"><video id="gift-video" controls playsinline preload="none" aria-labelledby="gift-title"></video></div>
+<p id="playback-status" role="status"></p>
+<div class="player-actions"><button id="replay">↻ Replay</button><button id="sound" aria-pressed="false">Sound on</button></div>
+<p class="preview-note">This preview sends no gifts and spends no coins.</p>
+</dialog>
+<script type="module" src="gift-previews.js"></script>
+</body></html>

@@ -13,6 +13,7 @@ jobs:
       - run: |
           node --check dist/app.js
           node --check dist/profile-header.js
+          node --check dist/gift-previews.js
       - uses: actions/upload-artifact@v4
         with:
           name: Pulse-Web
